@@ -1,3 +1,3 @@
 import styled from "styled-components";
 
-export const HeaderSocialStl = styled.ul``
+export const HeaderSocialStl = styled.div``
