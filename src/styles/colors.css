@@ -1,0 +1,9 @@
+:root {
+  --black: #111;
+  --white: #fff;
+  --link: rgb(52, 143, 67);
+  --link-hover: rgb(71, 199, 93);
+  --link-active: rgb(170, 187, 20);
+  --gray: #b6b7ba;
+  --shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.06);
+}
