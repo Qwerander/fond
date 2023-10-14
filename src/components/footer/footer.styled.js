@@ -1,3 +1,3 @@
 import styled from 'styled-components'
 
-export const FooterStl = styled.header``
+export const FooterStl = styled.footer``

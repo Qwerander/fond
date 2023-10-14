@@ -6,9 +6,18 @@ export const HeaderLogoStl = styled.div`
   border-radius: 100%;
   border: 1px solid black;
   overflow: hidden; /* чтобы обрезать SVG, если оно выходит за границы div */
+  
 
   > img {
     max-width: 100%; /* чтобы SVG полностью заполнило доступное пространство внутри div */
     height: auto; /* чтобы сохранить пропорции SVG */
+  }
+
+  @media (max-width: 920px) {
+    grid-row: 1 / 3; 
+  }
+  @media (max-width: 490px) {
+    grid-row: 2 / 3; 
+    grid-column: 1 / 2; 
   }
 `;

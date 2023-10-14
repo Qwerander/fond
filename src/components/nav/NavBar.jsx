@@ -1,20 +1,15 @@
+import { useResize } from '../../hooks/useRessize';
 import { Layout } from '../layout/Layout';
+import { Menu } from './menu/Menu';
+import { MobileMenu } from './mobileMenu/MobileMenu';
 import { NavStl } from './navBar.styled';
 
 export const NavBar = () => {
+  const resize920 = useResize(920);
+
   return (
     <NavStl>
-      <Layout>
-        <nav className='nav'>
-          <a href='/'>О фонде</a>
-          <a href='/'>Новости</a>
-          <a href='/'>Программы фонда</a>
-          <a href='/'>Документы</a>
-          <a href='/'>Пожертвовать</a>
-          <a href='/'>Герои Z</a>
-          <a href='/'>Контакты</a>
-        </nav>
-      </Layout>
+      <Layout>{resize920 ? <Menu /> : <MobileMenu />}</Layout>
     </NavStl>
   );
 };

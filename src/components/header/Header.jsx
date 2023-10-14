@@ -1,11 +1,12 @@
 import { HeaderStl } from './header.styled';
 import { HeaderContacts } from './contacts/HeaderContacts';
 import { HeaderLogo } from './logo/HeaderLogo';
-import { HeaderSocial } from './social/HeaderSocial';
 import { HeaderTitle } from './title/HeaderTitle';
 import { Layout } from '../layout/Layout';
+import { NavBar } from '../nav/NavBar';
 
 export const Header = () => {
+
   return (
     <HeaderStl>
       <Layout>
@@ -13,9 +14,9 @@ export const Header = () => {
           <HeaderTitle />
           <HeaderLogo />
           <HeaderContacts />
-          <HeaderSocial />
         </div>
       </Layout>
+      <NavBar />
     </HeaderStl>
   );
 };
