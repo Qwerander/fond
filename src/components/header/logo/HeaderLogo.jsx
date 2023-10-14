@@ -1,6 +1,5 @@
 import { HeaderLogoStl } from './headerLogo.styled';
-import { ReactComponent as Logo } from '../../../assets/img/logo.svg';
-import logo from '../../../assets/img/logo.svg';
+import logo from '../../../assets/img/logo.jpg';
 
 export const HeaderLogo = () => {
   return (

@@ -5,6 +5,7 @@ export const HeaderStl = styled.header`
   top: 0;
   padding: 24px;
   box-shadow: var(--shadow);
+  background-color: rgba(241, 241, 241, 0.85);
 
   .content {
     text-align: center;
