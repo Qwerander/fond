@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HeaderStl = styled.header`
   padding: 24px 0 0;
   box-shadow: var(--shadow);
-  background-color: rgba(241, 241, 241, 1);
+  background-color: var(--white);
 
   .content {
     text-align: center;

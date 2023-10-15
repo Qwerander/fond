@@ -1,5 +1,5 @@
-import { useResize } from '../../hooks/useRessize';
-import { Layout } from '../layout/Layout';
+import { useResize } from '../../../hooks/useRessize';
+import { Layout } from '../../layout/Layout';
 import { Menu } from './menu/Menu';
 import { MobileMenu } from './mobileMenu/MobileMenu';
 import { NavStl } from './navBar.styled';

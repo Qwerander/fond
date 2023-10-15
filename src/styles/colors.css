@@ -1,9 +1,9 @@
 :root {
   --black: #111;
-  --white: #f1f1f1;
-  --link: rgb(52, 143, 67);
-  --link-hover: rgb(71, 199, 93);
-  --link-active: rgb(170, 187, 20);
-  --gray: #b6b7ba;
+  --white: rgba(241, 241, 241, 1);
+  --accent: #3b8e45;
+  --link: #ffca3a;
+  --link-hover: #ffdf7e;
+  --gray: #444;
   --shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.06);
 }

@@ -1,8 +1,8 @@
 import { MenuStl } from './menu.styled';
 
-export const Menu = () => {
+export const Menu = ({ column = false, gap, align }) => {
   return (
-    <MenuStl>
+    <MenuStl column={column} gap={gap} align={align}>
       <a href='/'>О фонде</a>
       <a href='/'>Новости</a>
       <a href='/'>Программы фонда</a>

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { StyledMobileMenu } from './mobileMenu.styled';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { Menu } from '../menu/Menu';
 
 
@@ -8,6 +8,7 @@ export const MobileMenu = ({ user }) => {
     const path = useLocation()
     const mobileMenu = useRef(null);
     const [isOpenDropMenu, setIsOpenDropMenu] = useState(false);
+    
     const toggleMenu = () => {
         setIsOpenDropMenu(prev => !prev);
         document.body.classList.toggle('stop-scroll')
