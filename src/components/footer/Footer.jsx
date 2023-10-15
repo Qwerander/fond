@@ -21,6 +21,7 @@ export const Footer = () => {
             <FooterContacts />
           </div>
         </div>
+        <span className='year'>2023 г.</span>
       </Layout>
     </FooterStl>
   );

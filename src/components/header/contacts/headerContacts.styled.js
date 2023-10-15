@@ -12,12 +12,23 @@ export const HeaderContactsStl = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
+    gap: 6px;  
     .phone {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
       font-weight: 600;
       color: var(--black);
       transition: color 0.3s ease-in-out;
+      > svg {
+        margin-right: 4px;
+        transition: fill 0.3s ease-in-out;
+        fill: var(--black);
+      }
       &:hover {
+        > svg {
+          fill: var(--link);
+        }
         color: var(--link);
       }
     }

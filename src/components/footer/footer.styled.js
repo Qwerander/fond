@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterStl = styled.footer`
-  padding: 24px 96px 48px 0;
+  padding: 24px 0px;
   background-color: var(--accent);
   position: relative;
 
@@ -28,6 +28,12 @@ export const FooterStl = styled.footer`
       margin: 0 auto;
     }
   }
+  .year {
+    margin-top: 24px;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+  }
 
   @media (max-width: 768px) {
     .content {
@@ -41,12 +47,21 @@ export const FooterStl = styled.footer`
   @media (max-width: 490px) {
     padding-right: 0;
   }
-  @media (max-width: 350px) {
+
+  @media (max-width: 420px) {
     .content {
       .right {
         margin-left: 0;
         gap: 6px;
       }
+    }
+  }
+  @media (max-width: 390px) {
+    .content {
+        .right {
+            width: 100%;
+            flex-direction: column;
+        }
     }
   }
 `;
