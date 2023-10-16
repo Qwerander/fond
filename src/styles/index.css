@@ -11,6 +11,16 @@ body {
   background-color: var(--white);
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root footer {
+  margin-top: auto;
+} 
+
 .stop-scroll {
   overflow: hidden;
 }

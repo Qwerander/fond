@@ -4,6 +4,7 @@ export const FooterStl = styled.footer`
   padding: 24px 0px;
   background-color: var(--accent);
   position: relative;
+  margin-top: auto;
 
   /* .stripe {
     position: absolute;

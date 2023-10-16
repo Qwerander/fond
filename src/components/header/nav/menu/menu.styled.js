@@ -15,6 +15,13 @@ export const MenuStl = styled.nav`
       color: var(--link-hover);
     }
   }
+  
+  .active {
+    color: var(--link-hover);
+    &:hover {
+      color: var(--link);
+    }
+  }
 
   @media (max-width: 920px) {
     flex-direction: column;
