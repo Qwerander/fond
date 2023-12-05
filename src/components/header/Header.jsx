@@ -10,7 +10,7 @@ export const Header = () => {
   // https://login.wmtransfer.com/GateKeeper.aspx?RID=8A3376EF-19B9-43ED-9EEB-B0CF00C057B0
   const navigate = useNavigate()
   const handleClick = () => {
-    navigate('/login.wmtransfer.com/GateKeeper.aspx?RID=8A3376EF-19B9-43ED-9EEB-B0CF00C057B0')
+    navigate('login.wmtransfer.com/GateKeeper.aspx?RID=8A3376EF-19B9-43ED-9EEB-B0CF00C057B0')
   }
   return (
     <HeaderStl>
@@ -19,7 +19,7 @@ export const Header = () => {
           <HeaderTitle />
           <HeaderLogo />
           <HeaderContacts />
-          <button onClick={handleClick}>Вход</button>
+          <a href='https://login.wmtransfer.com/GateKeeper.aspx?RID=8A3376EF-19B9-43ED-9EEB-B0CF00C057B0'>Вход</a>
         </div>
       </Layout>
       <NavBar />
