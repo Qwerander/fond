@@ -21,30 +21,10 @@ const WebMoneyLoginButton = () => {
     // Перенаправление на сайт WebMoney
     window.location.href = redirectUrl;
   };
-  const btn = window.webmoney
-        .widgets()
-        .button.create({
-          data: {
-            amount: 500,
-            purse: 'F381242476693',
-            desc: 'Тестовый товар',
-            paymentType: 'wm',
-          },
-          style: {
-            theme: 'wm',
-            showAmount: true,
-            titleNum: 1,
-            title: '',
-            design: 'skeuomorph',
-          },
-          lang: 'ru',
-        })
-        .on('paymentComplete', function (data) {
-          /* your code */
-        })
-        .mount('wm-widget');
 
-  return 
+  return (
+    <button onClick={handleWebMoneyLogin}>Войти через WebMoney</button>
+  );
 };
 
 
