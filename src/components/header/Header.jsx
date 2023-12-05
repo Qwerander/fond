@@ -15,16 +15,36 @@ const WebMoneyLoginButton = () => {
   const handleWebMoneyLogin = () => {
     // Здесь вы можете сформировать URL для перенаправления на сайт WebMoney.
     // Замените YOUR_REDIRECT_URL на фактический URL вашего приложения, куда WebMoney должен вернуть пользователя после аутентификации.
-    const redirectUrl = encodeURIComponent('https://login.wmtransfer.com/GateKeeper.aspx?RID=A94705CE-E5BB-41EF-B9B9-B0CF00CC5368');
+    const redirectUrl = 'https://login.wmtransfer.com/GateKeeper.aspx?RID=A94705CE-E5BB-41EF-B9B9-B0CF00CC5368';
   
     
     // Перенаправление на сайт WebMoney
     window.location.href = redirectUrl;
   };
+  const btn = window.webmoney
+        .widgets()
+        .button.create({
+          data: {
+            amount: 500,
+            purse: 'F381242476693',
+            desc: 'Тестовый товар',
+            paymentType: 'wm',
+          },
+          style: {
+            theme: 'wm',
+            showAmount: true,
+            titleNum: 1,
+            title: '',
+            design: 'skeuomorph',
+          },
+          lang: 'ru',
+        })
+        .on('paymentComplete', function (data) {
+          /* your code */
+        })
+        .mount('wm-widget');
 
-  return (
-    <button onClick={handleWebMoneyLogin}>Войти через WebMoney</button>
-  );
+  return 
 };
 
 
