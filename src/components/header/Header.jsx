@@ -6,12 +6,32 @@ import { Layout } from '../layout/Layout';
 import { NavBar } from './nav/NavBar';
 import { useNavigate } from 'react-router-dom';
 
+// WebMoneyLoginButton.js
+import { useHistory } from 'react-router-dom';
+
+const WebMoneyLoginButton = () => {
+  const history = useHistory();
+
+  const handleWebMoneyLogin = () => {
+    // Здесь вы можете сформировать URL для перенаправления на сайт WebMoney.
+    // Замените YOUR_REDIRECT_URL на фактический URL вашего приложения, куда WebMoney должен вернуть пользователя после аутентификации.
+    const redirectUrl = encodeURIComponent('https://login.wmtransfer.com/GateKeeper.aspx?RID=A94705CE-E5BB-41EF-B9B9-B0CF00CC5368');
+  
+    
+    // Перенаправление на сайт WebMoney
+    window.location.href = redirectUrl;
+  };
+
+  return (
+    <button onClick={handleWebMoneyLogin}>Войти через WebMoney</button>
+  );
+};
+
+
+
+
 export const Header = () => {
-  // https://login.wmtransfer.com/GateKeeper.aspx?RID=8A3376EF-19B9-43ED-9EEB-B0CF00C057B0
-  const navigate = useNavigate()
-  const handleClick = () => {
-    navigate('login.wmtransfer.com/GateKeeper.aspx?RID=8A3376EF-19B9-43ED-9EEB-B0CF00C057B0')
-  }
+
   return (
     <HeaderStl>
       <Layout>
@@ -19,7 +39,7 @@ export const Header = () => {
           <HeaderTitle />
           <HeaderLogo />
           <HeaderContacts />
-          <a href='https://login.wmtransfer.com/GateKeeper.aspx?RID=8A3376EF-19B9-43ED-9EEB-B0CF00C057B0'>Вход</a>
+         <WebMoneyLoginButton />
         </div>
       </Layout>
       <NavBar />
