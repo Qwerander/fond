@@ -7,10 +7,10 @@ import { NavBar } from './nav/NavBar';
 import { useNavigate } from 'react-router-dom';
 
 // WebMoneyLoginButton.js
-import { useHistory } from 'react-router-dom';
+
 
 const WebMoneyLoginButton = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleWebMoneyLogin = () => {
     // Здесь вы можете сформировать URL для перенаправления на сайт WebMoney.

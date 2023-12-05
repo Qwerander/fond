@@ -1,10 +1,10 @@
 // WebMoneyRedirect.js
 import React, { useEffect } from 'react';
-import { useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export const WebMoneyRedirect = () => {
   const location = useLocation();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Получение параметров из строки запроса URL
@@ -29,8 +29,8 @@ export const WebMoneyRedirect = () => {
     }
 
     // Перенаправление на главную страницу после обработки
-    history.push('/');
-  }, [location, history]);
+    navigate('/');
+  }, [location, navigate]);
 
   return (
     <div>
