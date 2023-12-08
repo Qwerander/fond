@@ -11,7 +11,6 @@ export const App = () => {
   return (
     <>
       <Header />
-      <Header />
       <Layout>
         <Outlet />
       </Layout>
